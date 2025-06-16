@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css"> <title>MyPensum</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#" id="home-link">Home</a></li>
+            <li><a id="error-report-link" href="#" target="_blank">Reporte de Errores</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Archivo</a>
+                <div class="dropdown-content">
+                    <a href="#" id="clear-editor-button">Limpiar Editor</a>
+                    <label for="load-file-input" style="cursor: pointer;">Cargar Archivo</label>
+                    <input type="file" id="load-file-input" accept=".plfp" style="display: none;">
+                    <a href="#" id="save-file-button">Guardar Archivo</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>Welcome to MyPensum</h1>
+
+        <div class="editor-section">
+            <h2>Editor de Carreras</h2>
+            <textarea id="editor" placeholder="Introduce tu código .plfp aquí..."></textarea>
+            <button id="analyze-button">Analizar</button>
+        </div>
+
+        <div class="token-table-section">
+            <h2>Tabla de Tokens</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Fila</th>
+                        <th>Columna</th>
+                        <th>Lexema</th>
+                        <th>Token</th>
+                    </tr>
+                </thead>
+                <tbody id="token-table-body">
+                    </tbody>
+            </table>
+        </div>
+
+    </div>
+
+    <script src="/dist/index.js"></script> </body>
+</html>

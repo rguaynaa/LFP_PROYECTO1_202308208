@@ -1,0 +1,71 @@
+Carrera: "Ingeniería en Ciencias y Sistemas"
+{
+    Semestre: 1
+    {
+        Curso:
+        {
+            Codigo: 101,
+            Nombre: "Matematica Basica 1",
+            Area: 1,
+            Prerrequisitos: ()
+        };
+        Curso:
+        {
+            Codigo: 104,
+            Nombre: "Introduccion a la Programacion 1",
+            Area: 2,
+            Prerrequisitos: ()
+        };
+    };
+    Semestre: 2
+    {
+        Curso:
+        {
+            Codigo: 103,
+            Nombre: "Matematica Basica 2",
+            Area: 1,
+            Prerrequisitos: (101)
+        };
+        Curso:
+        {
+            Codigo: 106,
+            Nombre: "Introduccion a la Programacion 2",
+            Area: 2,
+            Prerrequisitos: (104)
+        };
+    };
+    Semestre: 3
+    {
+        Curso:
+        {
+            Codigo: 770,
+            Nombre: "Programacion de Computadoras 1",
+            Area: 2,
+            Prerrequisitos: (103, 106)
+        };
+        Curso:
+        {
+            Codigo: 720,
+            Nombre: "Logica de Sistemas",
+            Area: 3,
+            Prerrequisitos: (104)
+        };
+    };
+    Semestre: 4
+    {
+        Curso:
+        {
+            Codigo: 771,
+            Nombre: "Programacion de Computadoras 2",
+            Area: 2,
+            Prerrequisitos: (770)
+        };
+        Curso:
+        {
+            Codigo: 795,
+            Nombre: "Organizacion de Lenguajes y Compiladores 1",
+            Area: 4,
+            Prerrequisitos: (770)
+        };
+    };
+}

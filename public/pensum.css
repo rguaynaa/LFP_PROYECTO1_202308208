@@ -1,0 +1,89 @@
+/* Contenido de tu styles.css original, ahora para el pensum.html */
+.tbl{
+    width: 100%;
+    max-height: 100vh;
+}
+
+td{
+ padding:  1.5rem 0 1.5rem 0;
+ border: 2px solid gray;
+
+}
+p{
+    margin: 0;
+}
+
+div{
+    margin: 2%;
+
+    padding: 4%;
+    width: 60%; /* Ajustado para que quepa en la celda */
+    /* max-width: 60;  Esto es un valor incorrecto, debería ser px, % o rem */
+    text-align: center;
+    position: relative;
+    background-color: #fae1da;
+    border-radius: 5px; /* Añadido para mejor visual */
+}
+
+.codigo{
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 15%;
+    height: 100%;
+    background-color: #ec824e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: white;
+}
+
+.pre{
+    position : absolute;
+    top: 0px;
+    right: 0px;
+    width: 15%;
+    height: 100%;
+    background-color: #ec824e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 0.8em; /* Ajuste para texto más pequeño */
+}
+
+/* Estilos adicionales para los cursos interactivos */
+.curso-item {
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.curso-item.selected {
+    border: 2px solid #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+}
+
+.curso-item.prerequisite {
+    background-color: #ffe0b2; /* Color naranja claro */
+    border: 2px solid #ff9800; /* Borde naranja */
+}
+
+/* Estilo para los contenedores de carrera y semestre */
+.carrera-container {
+    margin-bottom: 40px;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.semestre-container {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f0f8ff; /* Azul muy claro */
+    border-radius: 5px;
+    border: 1px dashed #cceeff;
+}
