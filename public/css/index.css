@@ -1,0 +1,60 @@
+body {
+    padding-top: 70px; /* Espacio para la barra de navegación fija */
+    background-color: #f4f4f4;
+}
+
+.container_user {
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+#editor {
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    height: 65vh;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    white-space: pre-wrap; 
+    overflow-y: auto;
+    background-color: #f8f9fa;
+}
+
+.table_responsive {
+    height: 65vh;
+    overflow-y: auto;
+    border: 1px solid #dee2e6;
+}
+
+.btn_user {
+    margin: 1rem;
+    width: 200px;
+}
+
+#pensums a {
+    margin-right: 10px;
+}
+
+/* Colores para el resaltado de sintaxis (según enunciado) */
+.keyword {
+    color: blue;
+    font-weight: bold;
+}
+.string {
+    color: #d9534f; /* Naranja/Rojo */
+}
+.number {
+    color: #5d3d9e; /* Morado */
+}
+.other {
+    color: black;
+}
